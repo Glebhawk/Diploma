@@ -1,0 +1,51 @@
+﻿@page "{id}"
+@model SpacecraftSite.Pages.CountryModel
+@{
+    ViewData["Title"] = Model.country.Name;
+
+    <h3>@Model.country.Name</h3>
+    <br />
+
+    <h5>Статистика</h5>
+    <table border="1" cellpadding="4">
+        <tr>
+            <th>Всього польотів</th>
+            <th>Успішних</th>
+            <th>Провальних</th>
+            <th>Відсоток успіху</th>
+        </tr>
+        <tr>
+            <td>@Model.statistics.allSpacecraft</td>
+            <td>@Model.statistics.successfull</td>
+            <td>@Model.statistics.failed</td>
+            <td>@(Model.statistics.percentage)%</td>
+        </tr>
+    </table>
+    <br />
+
+    <h5>Апарати</h5>
+    <table border="1" cellpadding="4">
+        <tr>
+            <th>Супутник</th>
+            <th>Дата запуску</th>
+            <th>Мета</th>
+            <th>Результат</th>
+        </tr>
+        @foreach (var spacecraft in Model.spacecrafts)
+        {
+            <tr>
+                <td><a href="/Spacecraft/@spacecraft.Id">@spacecraft.Name</a></td>
+                <td>@spacecraft.Launch.LaunchDate.ToShortDateString()</td>
+                <td>@spacecraft.Type</td>
+                @if (spacecraft.Launch.Success == true)
+                {
+                    <td>Успіх</td>
+                }
+                else
+                {
+                    <td>Провал</td>
+                }
+            </tr>
+        }
+    </table>
+    }

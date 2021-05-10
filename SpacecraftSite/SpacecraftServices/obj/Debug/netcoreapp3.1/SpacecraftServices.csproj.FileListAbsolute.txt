@@ -1,0 +1,12 @@
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\bin\Debug\netcoreapp3.1\SpacecraftServices.deps.json
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\bin\Debug\netcoreapp3.1\SpacecraftServices.dll
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\bin\Debug\netcoreapp3.1\SpacecraftServices.pdb
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\bin\Debug\netcoreapp3.1\SpacecraftData.dll
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\bin\Debug\netcoreapp3.1\SpacecraftData.pdb
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\obj\Debug\netcoreapp3.1\SpacecraftServices.csprojAssemblyReference.cache
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\obj\Debug\netcoreapp3.1\SpacecraftServices.AssemblyInfoInputs.cache
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\obj\Debug\netcoreapp3.1\SpacecraftServices.AssemblyInfo.cs
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\obj\Debug\netcoreapp3.1\SpacecraftServices.csproj.CoreCompileInputs.cache
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\obj\Debug\netcoreapp3.1\SpacecraftServices.csproj.CopyComplete
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\obj\Debug\netcoreapp3.1\SpacecraftServices.dll
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftServices\obj\Debug\netcoreapp3.1\SpacecraftServices.pdb

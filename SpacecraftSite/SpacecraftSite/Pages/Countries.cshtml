@@ -1,0 +1,23 @@
+﻿@page
+@model SpacecraftSite.Pages.CountriesModel
+@{
+    ViewData["Title"] = "Країни";
+
+    <h1>Країни</h1>
+    <br />
+
+    <div>
+        @foreach (var countryStatistics in Model.statistics)
+        {
+            <div onclick="window.location.href = '/Country/@countryStatistics.country.Id'">
+                <h5>@countryStatistics.country.Name</h5>
+                <table border="1" cellpadding="4">
+                    <tr><td>Всього польотів</td><td>@countryStatistics.allSpacecraft</td></tr>
+                    <tr><td>Успішних</td><td>@countryStatistics.successfull</td></tr>
+                    <tr><td>Провальних</td><td>@countryStatistics.failed</td></tr>
+                    <tr><td>Відсоток успіху</td><td>@(countryStatistics.percentage)%</td></tr>
+                </table>
+            </div>
+        }
+    </div>
+}

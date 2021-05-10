@@ -1,0 +1,78 @@
+﻿@page "{year}"
+@model SpacecraftSite.Pages.YearModel
+@{
+    ViewData["Title"] = Model.Year;
+
+    <h3>@Model.Year</h3>
+    <br />
+
+    <div>
+        @if (Model.previousYear)
+        {
+            <div><a href="/Year/@(Model.Year-1)">@(Model.Year-1)</a></div>
+        }
+        <div><a href="/Year/@Model.Year">@Model.Year</a></div>
+        @if (Model.nextYear)
+        {
+            <div><a href="/Year/@(Model.Year+1)">@(Model.Year+1)</a></div>
+        }
+    </div>
+    <br />
+
+    <h3>Статистика</h3>
+    <table border="1" cellpadding="4">
+        <tr>
+            <th>Країна</th>
+            <th>Всього польотів</th>
+            <th>Успішних</th>
+            <th>Провальних</th>
+            <th>Відсоток успіху</th>
+        </tr>
+        @foreach (var countryStatistics in Model.statistics)
+        {
+    <tr>
+        <td><a href="/Country/@countryStatistics.country.Id.">@countryStatistics.country.Name</a>></td>
+        <td>@countryStatistics.allSpacecraft</td>
+        <td>@countryStatistics.successfull</td>
+        <td>@countryStatistics.failed</td>
+        <td>@(countryStatistics.percentage)%</td>
+    </tr>
+        }
+    <tr>
+        <th>Всього</th>
+        <th>@Model.completeStatistics.allSpacecraft</th>
+        <th>@Model.completeStatistics.successfull</th>
+        <th>@Model.completeStatistics.failed</th>
+        <th>@(Model.completeStatistics.percentage)%</th>
+    </tr>
+    </table>
+    <br />
+
+    <h3>Апарати</h3>
+    <table border="1" cellpadding="4">
+        <tr>
+            <th>Супутник</th>
+            <th>Дата запуску</th>
+            <th>Мета</th>
+            <th>Країна</th>
+            <th>Результат</th>
+        </tr>
+        @foreach (var spacecraft in Model.spacecrafts)
+        {
+            <tr>
+                <td><a href="/Spacecraft/@spacecraft.Id">@spacecraft.Name</a></td>
+                <td>@spacecraft.Launch.LaunchDate.ToShortDateString()</td>
+                <td>@spacecraft.Type</td>
+                <td><a href="/Country/@spacecraft.Country.Id">@spacecraft.Country.Name</a></td>
+                @if (spacecraft.Launch.Success == true)
+                {
+                    <td>Успіх</td>
+                }
+                else
+                {
+                    <td>Провал</td>
+                }
+            </tr>
+        }
+    </table>
+}

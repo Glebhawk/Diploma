@@ -1,0 +1,28 @@
+﻿@page
+@model SpacecraftSite.Pages.SpacecraftsModel
+@{
+    ViewData["Title"] = "Супутники";
+}
+
+<h1>Космічні апарати</h1>
+
+<table border="1" cellpadding="4">
+    <tr>
+        <th>Супутник</th>
+        <th>Дата запуску</th>
+        <th>Мета</th>
+        <th>Країна</th>
+        <th>Результат</th>
+    </tr>
+    @foreach (var spacecraft in Model.spacecrafts)
+            {
+                <tr>
+                    <td><a href= "/Spacecraft/@spacecraft.Id">@spacecraft.Name</a></td>
+                    <td>@spacecraft.Launch.LaunchDate.ToShortDateString()</td>
+                    <td>@spacecraft.Type</td>
+                    <td><a href="/Country/@spacecraft.Country.Id">@spacecraft.Country.Name</a></td>
+                    @if (spacecraft.Launch.Success == true){<td>Успіх</td>}
+                    else {<td>Провал</td>}
+                </tr>
+            }
+</table>
