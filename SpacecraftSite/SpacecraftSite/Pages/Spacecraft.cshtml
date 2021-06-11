@@ -5,9 +5,15 @@
 
     <h3>@Model.spacecraft.Name</h3>
 
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div>[<a href="/Edit/EditSpacecraft/@Model.spacecraft.Id">Редагувати</a>|<a href="/Edit/CreateSpacecraft">Новий</a>]</div>
+    }
+
     <br />
     <h5>Характеристики</h5>
     <table cellpadding="4">
+        <tr><td>NSSDC ID</td><td><a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=@Model.spacecraft.NSSDC">@Model.spacecraft.NSSDC</a></td></tr>
         <tr><td>Країна</td><td><a href="/Country/@Model.spacecraft.Country.Id">@Model.spacecraft.Country.Name</a></td></tr>
         <tr><td>Оператор</td><td>@Model.spacecraft.Operator</td></tr>
         <tr><td>Тип</td><td>@Model.spacecraft.Type</td></tr>
@@ -33,5 +39,5 @@
     <br />
 
     <h5>Загальні відомості</h5>
-    <p>@Model.spacecraft.Mission</p>
+    <p style="white-space:pre-line">@Model.spacecraft.Mission</p>
 }

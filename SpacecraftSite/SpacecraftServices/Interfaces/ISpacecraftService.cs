@@ -11,5 +11,7 @@ namespace SpacecraftServices.Interfaces
         Task<IEnumerable<Spacecraft>> GetAllSpacecrafts();
         Task<IEnumerable<Spacecraft>> GetAllSpacecraftsByYear(int year);
         Task<IEnumerable<Spacecraft>> GetAllSpacecraftsByCountry(int countryId);
+        Task<bool> UpdateSpacecraft(Spacecraft spacecraft);
+        Task<bool> CreateSpacecraft(Spacecraft spacecraft);
     }
 }

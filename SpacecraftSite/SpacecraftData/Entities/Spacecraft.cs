@@ -8,6 +8,7 @@ namespace SpacecraftData.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string NSSDC { get; set; }
         public Country Country { get; set; }
         public string Operator { get; set; }
         public string Type { get; set; }

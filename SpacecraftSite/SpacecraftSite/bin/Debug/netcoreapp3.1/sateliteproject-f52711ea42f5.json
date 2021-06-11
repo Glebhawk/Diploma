@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sateliteproject",
+  "private_key_id": "f52711ea42f5b65cbf06b9983773ff3ad2390442",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDTc8AXy9CaOxmF\nqUP2KdmtIO7kj/HBxba/UX3/+GtDIyTQsunISCnCVt31ev8yjWioNgpW/OHmywzM\n8+F18+UKxFYIrLacnPW8VXskZ7UASMfG+G1iXepeZ7/SwHsNtZmR6FViwGHIdghm\naQYbFTVSEx9NWiUgSWEMsRKzmdLM4fz3XBn7ags6coVp3cyvyIlM1eaXn4gTNnZi\nnAvXV0fPQLG4rtqcHDcWVQCpkA4UNKuMaQVpHFVcGCDc9j9u/083foYOP7+SdWy+\nz+WAy4nog+FGGV6YmHoYYABsWZv2qDgAdnWJDaTKTa51hYGL5uu9BkSwfsQ+OpHV\n8oKdbtaLAgMBAAECggEADXAsxBZi4nphC9qPBCTyvYr7Q7FWNu9extfh/xOFlZW1\nMEI+k0jqxnwIzSIM9+R+wznz/EVEAgvje18AdCOU6dNCeHipfliHUXnJQq4IlcUK\nVT3Sjc7UJz3GthkfeOaSpPA0BPue+0NtEz0Xcz8szVODyMGy3FNthIX4X0umVvjk\nIYdCAbU5IKXB+Yk1ouoak+hgMpi+ra1cHQuJALUTiHyS3IICPuqzcelnxQfBqQPu\nWO1gp9Q3GHW27chCWUzqJdI/phb4mJjMZYr2i+ZL3riYR72d/o7FdHvcOWTqfOAT\neNU3Dbmz6A3VGiPeo8iV9iE+OspOlmv+Aq520Zs0oQKBgQD16K1SOzEdpou+mNYM\nAW76VFMF9JhvpTX3oB9uRAj4gtbBKqLMuSYwww9ZBr7CSvtlnO6k1qTUHG/0waIX\n5c0ZL/NUNU5Ifpmq5z4P0BjZDQPshx+syk2ACcv4Qk0zkXcZsVBtMH//ewP6uxdh\n17JTaTF/+qJ5dT9PFfXFcMhCUQKBgQDcIRkkgMbcITcyDd5wF+aHKf46/dB/eth+\nnKVs0bAGDz//2sNLmgF/EMbPvt/h1cmhln6FYHFNNUf00c43DVQsZVB3lsTsMbS6\nQs2iYDBmbDhpQyFqvfUr45haNC53Z8zZKsfgNpQPiRSmBfjNLaVGeV+YRPqCbV0V\n9lqwBERYGwKBgQDWilZUjNHQFZKMCdmNBd8lxVXdt0Ua+p932Boz4GWXMsdcJe98\n/vejyTplqG3bIwHr6BuIcr/BUsIWXq0lflcO53e6evs+Yj19Dlxl/V8AVsuam1T2\nMlWlJGbwxB+IoxuurbUGXi793PxezsWalk29WeRWzHrdzn4aaIVQ6ZG90QKBgQCe\n6SnsZyan3TaqZMaypx5dbxw/2+E7ViSZ6l2lnA51oWazPmsD1c7Euwi7CnE26A3i\nH/GAOaoxcYhbnWY/6dhdIFqhqm7Ij+2HFRi74rKuDev/WV3zX+Rw5aGjZM4ylvWT\nxMV8AAqM2InWfLMq84u/v3kaRJmPtIGhjDHVpY7tBwKBgCGGa+PZc1uX5sb3cU2m\n4KbrQK04qEB2axEbm/MTYvMCo7279uffMcR/eTbb0FQDBKfe/Qy3286Vjg2Wdqxa\nqk6ycY+UYddQRiJdf+IuwwG7FxThNozBAdMEgF20BIg12vZxg4DPNU76Hu4wvQo3\n9GSrGnoQkOXSamtyu2UqxOxU\n-----END PRIVATE KEY-----\n",
+  "client_email": "glebhawk@sateliteproject.iam.gserviceaccount.com",
+  "client_id": "105148549742123332389",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/glebhawk%40sateliteproject.iam.gserviceaccount.com"
+}

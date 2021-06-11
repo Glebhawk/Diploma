@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpacecraftSite.Pages.YearModel" Collapsed="true">
+    <Position X="16.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAgABwAAAAAAAAAARAAIAAAAAAAAAAQAAAACAAA=</HashCode>
+      <FileName>Pages\Year.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="spacecraftService" />
+      <Field Name="launchService" />
+      <Field Name="statisticsService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Startup">
+    <Position X="7.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpacecraftSite.Program">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.SpacecraftsModel" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="spacecraftService" Type="SpacecraftServices.Interfaces.ISpacecraftService" FixedFromPoint="true">
+      <Path>
+        <Point X="16.75" Y="1.191" />
+        <Point X="16.75" Y="2.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACAAA=</HashCode>
+      <FileName>Pages\Spacecrafts.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="spacecraftService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.SpacecraftModel" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="spacecraftService" Type="SpacecraftServices.Interfaces.ISpacecraftService" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.25" Y="1.191" />
+        <Point X="18.25" Y="1.566" />
+        <Point X="17.688" Y="1.566" />
+        <Point X="17.688" Y="2.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAACAAA=</HashCode>
+      <FileName>Pages\Spacecraft.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="spacecraftService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.RocketsModel" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Pages\Rockets.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rocketService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.RocketModel" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAQAAAAAACA=</HashCode>
+      <FileName>Pages\Rocket.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="rocketService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.IndexModel" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Pages\Index.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.ErrorModel" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAIAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Pages\Error.cshtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.CountryModel" Collapsed="true">
+    <Position X="14.5" Y="3.75" Width="1.5" />
+    <AssociationLine Name="spacecraftService" Type="SpacecraftServices.Interfaces.ISpacecraftService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.406" Y="3.75" />
+        <Point X="15.406" Y="3.389" />
+        <Point X="16.875" Y="3.389" />
+        <Point X="16.875" Y="2.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAgAAAAAAAAAAAAARAAAAAAAAAACAAQAAAACAAA=</HashCode>
+      <FileName>Pages\Country.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="spacecraftService" />
+      <Field Name="launchService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.CountriesModel" Collapsed="true">
+    <Position X="18.5" Y="3.75" Width="1.5" />
+    <AssociationLine Name="statisticsService" Type="SpacecraftServices.Interfaces.IStatisticsService" FixedFromPoint="true">
+      <Path>
+        <Point X="19.125" Y="4.441" />
+        <Point X="19.125" Y="5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Pages\Countries.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="statisticsService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.ChronologyModel" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAACAAA=</HashCode>
+      <FileName>Pages\Chronology.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="spacecraftService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.Edit.EditSpacecraftModel" Collapsed="true">
+    <Position X="13" Y="2.75" Width="1.75" />
+    <AssociationLine Name="spacecraftService" Type="SpacecraftServices.Interfaces.ISpacecraftService" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.75" Y="3.158" />
+        <Point X="15.125" Y="3.158" />
+        <Point X="15.125" Y="2.688" />
+        <Point X="16.5" Y="2.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CQAAEAAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAACAAA=</HashCode>
+      <FileName>Pages\Edit\EditSpacecraft.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="spacecraftService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Pages.Edit.CreateSpacecraftModel" Collapsed="true">
+    <Position X="13" Y="0.5" Width="2.5" />
+    <AssociationLine Name="spacecraftService" Type="SpacecraftServices.Interfaces.ISpacecraftService" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.094" Y="1.191" />
+        <Point X="15.094" Y="1.566" />
+        <Point X="16.323" Y="1.566" />
+        <Point X="16.323" Y="2.25" />
+        <Point X="16.812" Y="2.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CQAAEAAAAAAAAAAAAAAIAAAAQAAAAAABAAQAAAACAAQ=</HashCode>
+      <FileName>Pages\Edit\CreateSpacecraft.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="spacecraftService" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Areas.Identity.IdentityHostingStartup">
+    <Position X="7.5" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\IdentityHostingStartup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftSite.Areas.Identity.Pages.Account.RegisterModel" Collapsed="true">
+    <Position X="12" Y="6" Width="1.5" />
+    <AssociationLine Name="_signInManager" Type="Microsoft.AspNetCore.Identity.SignInManager&lt;TUser&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="6.312" />
+        <Point X="11.625" Y="6.312" />
+        <Point X="11.625" Y="5.281" />
+        <Point X="11" Y="5.281" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_userManager" Type="Microsoft.AspNetCore.Identity.UserManager&lt;TUser&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="12.688" Y="6" />
+        <Point X="12.688" Y="5.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAgAABAAAAAMAAAAAAAAAIEAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Register.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_signInManager" />
+      <Field Name="_userManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Areas.Identity.Pages.Account.LogoutModel" Collapsed="true">
+    <Position X="9.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Logout.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_signInManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Areas.Identity.Pages.Account.LoginModel" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <AssociationLine Name="_userManager" Type="Microsoft.AspNetCore.Identity.UserManager&lt;TUser&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="6" />
+        <Point X="10.25" Y="5.755" />
+        <Point X="11.542" Y="5.755" Type="JumpStart" />
+        <Point X="11.708" Y="5.755" Type="JumpEnd" />
+        <Point X="12.312" Y="5.755" />
+        <Point X="12.312" Y="5.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_signInManager" Type="Microsoft.AspNetCore.Identity.SignInManager&lt;TUser&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="9.938" Y="6" />
+        <Point X="9.938" Y="5.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAABAAAAAAAAAAgAABAAAAAMAAAAAAAAAIEAAAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\Login.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_userManager" />
+      <Field Name="_signInManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftSite.Areas.Identity.Pages.Account.ChangePasswordModel" Collapsed="true">
+    <Position X="14" Y="6" Width="2" />
+    <AssociationLine Name="_userManager" Type="Microsoft.AspNetCore.Identity.UserManager&lt;TUser&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.062" Y="6" />
+        <Point X="14.062" Y="5.812" />
+        <Point X="13.125" Y="5.812" />
+        <Point X="13.125" Y="5.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_signInManager" Type="Microsoft.AspNetCore.Identity.SignInManager&lt;TUser&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.188" Y="6" />
+        <Point X="14.188" Y="4.75" />
+        <Point X="11.375" Y="4.75" />
+        <Point X="11.375" Y="5.109" />
+        <Point X="11" Y="5.109" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAgAABAAAAAMAAAAAAAAAAEAIAAAAA=</HashCode>
+      <FileName>Areas\Identity\Pages\Account\ChangePassword.cshtml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_userManager" />
+      <Field Name="_signInManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftServices.Models.Statistics">
+    <Position X="20" Y="12" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SpacecraftServices.Models.RocketStatistics">
+    <Position X="20" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SpacecraftServices.Concrete.StatisticsService">
+    <Position X="24.25" Y="11.75" Width="2.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="spacecraftRepository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftServices.Concrete.SpacecraftService">
+    <Position X="21.75" Y="9" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftServices.Concrete.RocketService">
+    <Position X="24.25" Y="9" Width="2.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="rocketRepository" />
+      <Property Name="launchRepository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftServices.Concrete.LaunchService">
+    <Position X="21.75" Y="11.75" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftSite.SpacecraftData.ApplicationDbContext">
+    <Position X="31.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SpacecraftData.Repositories.Concrete.SpacecraftRepository">
+    <Position X="33.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftData.Repositories.Concrete.RocketRepository">
+    <Position X="32" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftData.Repositories.Concrete.LaunchRepository">
+    <Position X="30" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpacecraftData.Entities.Country">
+    <Position X="25.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SpacecraftData.Entities.Launch">
+    <Position X="23.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Rocket" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftData.Entities.Rocket">
+    <Position X="25.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Country" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftData.Entities.Spacecraft">
+    <Position X="23.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Country" />
+      <Property Name="Launch" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpacecraftData.Entities.Stage">
+    <Position X="27.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Rocket" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.SignInManager&lt;TUser&gt;" Collapsed="true">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.UserManager&lt;TUser&gt;" Collapsed="true">
+    <Position X="12" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SpacecraftSearcher.Concrete.SoloSearcher">
+    <Position X="30" Y="9" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAIIAAAAAIAAgAAABAAABAAAAAAAAAAAAAAIAAAASA=</HashCode>
+      <FileName>Pages\Create\SoloSearcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SpacecraftData.Repositories.Interfaces.ILaunchRepository" Collapsed="true">
+    <Position X="28.25" Y="10" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="SpacecraftData.Repositories.Interfaces.IRocketRepository" Collapsed="true">
+    <Position X="28.25" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="SpacecraftData.Repositories.Interfaces.ISpacecraftRepository" Collapsed="true">
+    <Position X="28.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="SpacecraftServices.Interfaces.ILaunchService" Collapsed="true">
+    <Position X="15.25" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="SpacecraftServices.Interfaces.ISpacecraftService" Collapsed="true">
+    <Position X="16.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="SpacecraftServices.Interfaces.IStatisticsService" Collapsed="true">
+    <Position X="18" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="SpacecraftServices.Interfaces.IRocketService" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

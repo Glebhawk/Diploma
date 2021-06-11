@@ -7,6 +7,7 @@ namespace SpacecraftData.Entities
     public class Stage
     {
         public int Id { get; set; }
+        public int Number { get; set; } 
         public string Name { get; set; }
         public string Engines { get; set; }
         public string Fuel { get; set; }

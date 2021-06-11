@@ -27,8 +27,8 @@ namespace SpacecraftSite.SpacecraftData
             //    Manufacturer = "ОКБ-1",
             //    Stages = new List<Stage>
             //            {
-            //                new Stage { Name = "Блоки Б, В, Г, Д", Engines = "4 РД-107", Fuel = "Гас і рідкий кисень"},
-            //                new Stage { Name = "Блок А", Engines = "РД-108", Fuel = "Гас і рідкий кисень"}
+            //                new Stage {Number = 1, Name = "Блоки Б, В, Г, Д", Engines = "4 РД-107", Fuel = "Гас і рідкий кисень"},
+            //                new Stage {Number = 1, Name = "Блок А", Engines = "РД-108", Fuel = "Гас і рідкий кисень"}
             //            }
             //};
             //Rocket Vanguard = new Rocket
@@ -40,9 +40,9 @@ namespace SpacecraftSite.SpacecraftData
             //    Manufacturer = "Glenn L. Martin Company",
             //    Stages = new List<Stage>
             //            {
-            //                new Stage { Name = "Авангард", Engines = "X-405", Fuel = "Гас і рідкий кисень"},
-            //                new Stage { Name = "Дельта", Engines = "AJ10-37", Fuel = "НДМГ і азотна кислота"},
-            //                new Stage { Name = "Авангард 3", Engines = "33KS2800", Fuel = "Тверде"}
+            //                new Stage {Number = 1, Name = "Авангард", Engines = "X-405", Fuel = "Гас і рідкий кисень"},
+            //                new Stage {Number = 1, Name = "Дельта", Engines = "AJ10-37", Fuel = "НДМГ і азотна кислота"},
+            //                new Stage {Number = 1, Name = "Авангард 3", Engines = "33KS2800", Fuel = "Тверде"}
             //            }
             //};
             //Rockets.Add(Sputnik);
@@ -58,6 +58,7 @@ namespace SpacecraftSite.SpacecraftData
             //        Payload = new List<Spacecraft> { new Spacecraft
             //        {
             //            Name = "Супутник-1 (ПС-1)",
+            //            NSSDC = "1957-001B",
             //            Country = USSR,
             //            Type = "Технологія",
             //            Operator = "СРСР",
@@ -83,6 +84,7 @@ namespace SpacecraftSite.SpacecraftData
             //        Payload = new List<Spacecraft> { new Spacecraft
             //        {
             //            Name = "Супутник-2 (ПС-2)",
+            //            NSSDC = "1957-002A",
             //            Country = USSR,
             //            Type = "Біологічні дослідження",
             //            Operator = "СРСР",
@@ -109,6 +111,7 @@ namespace SpacecraftSite.SpacecraftData
             //        Payload = new List<Spacecraft> { new Spacecraft
             //        {
             //            Name = "Авангард TV3",
+            //            NSSDC = "VAGT3",
             //            Country = USA,
             //            Type = "Технологія",
             //            Operator = "Лабораторія військово-морських сил США (Naval Research Laboratory)",

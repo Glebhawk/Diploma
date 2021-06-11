@@ -1,0 +1,87 @@
+﻿@page "{id}"
+@model SpacecraftSite.Pages.RocketModel
+@{
+    ViewData["Title"] = Model.rocket.Name;
+
+    <h3>@Model.rocket.Name</h3>
+
+    @*@if (User.Identity.IsAuthenticated)
+    {
+        <div>[<a href="/Edit/EditRocket/@Model.rocket.Id">Редагувати</a>]</div>
+    }*@
+
+    <br />
+    <h5>Характеристики</h5>
+    <table cellpadding="4" border="1">
+        <tr><td>Країна</td><td><a href="/Country/@Model.rocket.Country.Id">@Model.rocket.Country.Name</a></td></tr>
+        <tr><td>Виробник</td><td>@Model.rocket.Manufacturer</td></tr>
+        <tr><td>Масса</td><td>@Model.rocket.Mass тонн</td></tr>
+        <tr><td>Висота</td><td>@Model.rocket.Height м</td></tr>
+    </table>
+    <br />
+
+    <h5>Ступені</h5>
+    <table cellpadding="4" border="1">
+        <tr>
+            <th>Порядок</th>
+            <th>Назва</th>
+            <th>Двигуни</th>
+            <th>Паливо</th>
+        </tr>
+        @foreach (var stage in Model.rocket.Stages)
+        {
+            <tr>
+                <td>@stage.Number</td>
+                <td>@stage.Name</td>
+                <td>@stage.Engines</td>
+                <td>@stage.Fuel</td>
+            </tr>
+        }
+    </table>
+    <br />
+
+    <h5>Статистика</h5>
+    <table cellpadding="4" border="1">
+        <tr><td>Всього польотів</td><td>@Model.rocketStatistics.allLaunches</td></tr>
+        <tr><td>Успішних</td><td>@Model.rocketStatistics.successfull</td></tr>
+        <tr><td>Провальних</td><td>@Model.rocketStatistics.failed</td></tr>
+        <tr><td>Відсоток успіху</td><td>@(Model.rocketStatistics.percentage)%</td></tr>
+        <tr><td>Перший запуск</td><td>@Model.rocketStatistics.firstLaunch.ToShortDateString()</td></tr>
+        <tr><td>Останній запуск</td><td>@Model.rocketStatistics.lastLaunch.ToShortDateString()</td></tr>
+    </table>
+
+    <br />
+    <h5>Запуски</h5>
+    <table cellpadding="4" border="1">
+        <tr>
+            <th>Супутники</th>
+            <th>Дата</th>
+            <th>Майданчик</th>
+            <th>Результат</th>
+        </tr>
+        @foreach (var launch in Model.rocket.Launches)
+            {
+            <tr>
+                <td>
+                <a href="/Spacecraft/@launch.Payload.ToList()[0].Id">@launch.Payload.ToList()[0].Name</a>
+                @for(int i = 1; i < launch.Payload.Count(); i++)
+                {
+                    Console.WriteLine(", ");
+                    <a href="/Spacecraft/@launch.Payload.ToList()[i].Id">@launch.Payload.ToList()[i].Name</a>
+                }
+                </td>
+                <td>@launch.LaunchDate.ToShortDateString()</td>
+                <td>@launch.LaunchSite</td>
+                @if (launch.Success == true)
+                {
+                    <td>Успіх</td>
+                }
+                else
+                {
+                    <td>Провал</td>
+                }
+            </tr>
+            }
+    </table>
+    <br />
+}

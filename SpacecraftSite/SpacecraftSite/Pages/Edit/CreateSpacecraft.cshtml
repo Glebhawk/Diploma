@@ -1,0 +1,51 @@
+﻿@page
+@model SpacecraftSite.Pages.Edit.CreateSpacecraftModel
+@{
+    ViewData["Title"] = "Додати супутник";
+
+    <h5>Пошук</h5>
+    <form method="post">
+        <p>Ви можете спробувати знайти супутник за допомогою NSSDC ID. У разі, успіху деякі характеристики будуть заповнені автоматично.</p>
+        <input type="text" asp-for="SearchNSSDC" />
+        <button type="submit" asp-page-handler="Search">Шукати</button>
+        <div class="text-danger">@Model.ErrorMessage</div>
+    </form>
+    <br />
+
+    <h5>Характеристики</h5>
+    <form method="post">
+        <table cellpadding="4" border="1">
+            <tr><td>Назва</td><td style="width:100%"><input asp-for="spacecraft.Name" style="width:100%" /></td></tr>
+            <tr><td>NSSDC</td><td style="width:100%"><input asp-for="spacecraft.NSSDC" style="width:100%" /></td></tr>
+            <tr><td>Країна</td><td><input asp-for="spacecraft.Country.Name" style="width:100%" /></td></tr>
+            <tr><td>Оператор</td><td><input asp-for="spacecraft.Operator" style="width:100%" /></td></tr>
+            <tr><td>Тип</td><td><input asp-for="spacecraft.Type" style="width:100%" /></td></tr>
+            <tr><td>Масса, кг</td><td><input asp-for="spacecraftMassString" style="width:100%" /></td></tr>
+            <tr><td>Конфігурація</td><td><input asp-for="spacecraft.Configuration" style="width:100%" /></td></tr>
+            <tr><td>Оснащення</td><td><input asp-for="spacecraft.Equipment" style="width:100%" /></td></tr>
+        </table>
+        <br />
+        <h5>Запуск</h5>
+        <table cellpadding="4" border="1">
+            <tr><td>Дата</td><td style="width:100%"><input type="date" asp-for="spacecraft.Launch.LaunchDate" style="width:100%" /></td></tr>
+            <tr><td>Ракета</td><td><input asp-for="spacecraft.Launch.Rocket.Name" style="width:100%" /></td></tr>
+            <tr><td>Майданчик</td><td><input asp-for="spacecraft.Launch.LaunchSite" style="width:100%" /></td></tr>
+            <tr>
+                <td>Результат</td>
+                <td>
+                    <select asp-for="spacecraft.Launch.Success" style="width:100%">
+                        <option value="true">Успіх</option>
+                        <option value="false">Провал</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br />
+
+        <h5>Загальні відомості</h5>
+        <textarea rows="25" asp-for="spacecraft.Mission" style="width:100%"></textarea>
+        <br />
+        <div class="text-danger">@Model.ErrorMessage</div>
+        <button type="submit">Зберегти</button>
+    </form>
+}

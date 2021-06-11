@@ -17,6 +17,8 @@ using SpacecraftData.Repositories.Interfaces;
 using SpacecraftData.Repositories.Concrete;
 using SpacecraftServices.Interfaces;
 using SpacecraftServices.Concrete;
+using SpacecraftSearcher.Interfaces;
+using SpacecraftSearcher.Concrete;
 
 namespace SpacecraftSite
 {
@@ -43,14 +45,26 @@ namespace SpacecraftSite
                 options.Password.RequireNonAlphanumeric = false;
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddRazorPages();
+            services.AddRazorPages(options =>
+            {
+                options.Conventions.AuthorizeAreaFolder("Identity","/Account");
+                options.Conventions.AuthorizeFolder("/Edit");
+                options.Conventions.AuthorizeFolder("/Create");
+            });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Identity/Account/Login";
+            });
 
             services.AddTransient<ISpacecraftRepository, SpacecraftRepository>();
             services.AddTransient<ISpacecraftService, SpacecraftService>();
             services.AddTransient<ILaunchRepository, LaunchRepository>();
             services.AddTransient<ILaunchService, LaunchService>();
             services.AddTransient<IStatisticsService, StatisticsService>();
+            services.AddTransient<IRocketRepository, RocketRepository>();
             services.AddTransient<IRocketService, RocketService>();
+            services.AddTransient<ISoloSearcher, SoloSearcher>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

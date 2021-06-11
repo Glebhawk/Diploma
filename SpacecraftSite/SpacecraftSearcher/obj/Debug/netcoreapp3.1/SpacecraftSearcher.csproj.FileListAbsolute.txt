@@ -1,0 +1,12 @@
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\bin\Debug\netcoreapp3.1\SpacecraftSearcher.deps.json
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\bin\Debug\netcoreapp3.1\SpacecraftSearcher.dll
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\bin\Debug\netcoreapp3.1\SpacecraftSearcher.pdb
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\bin\Debug\netcoreapp3.1\SpacecraftData.dll
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\bin\Debug\netcoreapp3.1\SpacecraftData.pdb
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\obj\Debug\netcoreapp3.1\SpacecraftSearcher.csprojAssemblyReference.cache
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\obj\Debug\netcoreapp3.1\SpacecraftSearcher.AssemblyInfoInputs.cache
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\obj\Debug\netcoreapp3.1\SpacecraftSearcher.AssemblyInfo.cs
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\obj\Debug\netcoreapp3.1\SpacecraftSearcher.csproj.CoreCompileInputs.cache
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\obj\Debug\netcoreapp3.1\SpacecraftSearcher.csproj.CopyComplete
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\obj\Debug\netcoreapp3.1\SpacecraftSearcher.dll
+D:\Диплом (ахахаха)\SpacecraftSite\SpacecraftSearcher\obj\Debug\netcoreapp3.1\SpacecraftSearcher.pdb

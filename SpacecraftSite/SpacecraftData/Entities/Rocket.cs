@@ -13,5 +13,6 @@ namespace SpacecraftData.Entities
         public Country Country { get; set; }
         public string Manufacturer { get; set; }
         public IEnumerable<Stage> Stages { get; set; }
+        public IEnumerable<Launch> Launches { get; set; }
     }
 }

@@ -1,0 +1,56 @@
+﻿@page "{id}"
+@model SpacecraftSite.Pages.Edit.EditRocketModel
+@{
+    ViewData["Title"] = Model.Rocket.Name;
+
+    <h3>@Model.Rocket.Name</h3>
+    <input type="hidden" asp-for="@Model.Rocket.Id" />
+    <input type="hidden" asp-for="@Model.Rocket.Country.Id" />
+
+    <br />
+    <h5>Характеристики</h5>
+    <form method="post">
+        <table cellpadding="4" border="1">
+            <tr><td>Назва</td><td style="width:100%"><input asp-for="Rocket.Name" style="width:100%" /></td></tr>
+            <tr><td>Країна</td><td><input asp-for="Rocket.Country.Name" style="width:100%" /></td></tr>
+            <tr><td>Виробник</td><td><input asp-for="Rocket.Manufacturer" style="width:100%" /></td></tr>
+            <tr><td>Масса, тонн</td><td><input asp-for="rocketMassString" style="width:100%" /></td></tr>
+            <tr><td>Висота, м</td><td><input asp-for="rocketHeightString" style="width:100%" /></td></tr>
+        </table>
+        <br />
+
+        @*<h5>Ступені</h5>
+            <table cellpadding="4" border="1">
+                <tr>
+                    <th>Назва</th>
+                    <th>Двигуни</th>
+                    <th>Паливо</th>
+                    <th></th>
+                </tr>
+                @for (int i = 0; i < Model.rocketStages.Count(); i++)
+                {
+            <tr>
+                <td><input asp-for="@Model.rocketStages[i].Name" style="width:100%" /></td>
+                <td><input asp-for="@Model.rocketStages[i].Engines" style="width:100%" /></td>
+                <td><input asp-for="@Model.rocketStages[i].Fuel" style="width:100%" /></td>
+                <td>
+                    @if (i != 0)
+                    {
+                    <button type="submit" asp-route-data="@i" asp-page-handler="Up" style="display:inline">Вгору</button>
+                    }
+                    @if (i != Model.rocketStages.Count() - 1)
+                    {
+                    <button type="submit" asp-route-data="@i" asp-page-handler="Down" style="display:inline">Вниз</button>
+                    }
+                    <button type="submit" asp-route-data="@i" asp-page-handler="DeleteStage" style="display:inline">Видалити</button>
+                </td>
+            </tr>
+                }
+            </table>
+            <button type="submit" ty asp-page-handler="AddStage" style="display:inline">Додати</button>
+            <p></p><br />*@
+
+        <div class="text-danger">@Model.ErrorMessage</div>
+        <button type="submit">Зберегти</button>
+    </form>
+}

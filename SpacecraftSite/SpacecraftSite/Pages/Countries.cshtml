@@ -9,7 +9,7 @@
     <div>
         @foreach (var countryStatistics in Model.statistics)
         {
-            <div onclick="window.location.href = '/Country/@countryStatistics.country.Id'">
+            <div style="cursor:pointer" onclick="window.location.href = '/Country/@countryStatistics.country.Id'">
                 <h5>@countryStatistics.country.Name</h5>
                 <table border="1" cellpadding="4">
                     <tr><td>Всього польотів</td><td>@countryStatistics.allSpacecraft</td></tr>

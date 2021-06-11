@@ -37,5 +37,15 @@ namespace SpacecraftServices.Concrete
         {
             return await spacecraftRepository.Find(s => s.Country.Id == countryId);
         }
+
+        public async Task<bool> UpdateSpacecraft(Spacecraft spacecraft)
+        {
+            return await spacecraftRepository.Update(spacecraft);
+        }
+
+        public async Task<bool> CreateSpacecraft(Spacecraft spacecraft)
+        {
+            return await spacecraftRepository.Add(spacecraft);
+        }
     }
 }

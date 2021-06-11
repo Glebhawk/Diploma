@@ -2,6 +2,106 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Google.Api.Gax/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Api.Gax.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Api.Gax.dll": {}
+        }
+      },
+      "Google.Api.Gax.Rest/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax": "3.0.0",
+          "Google.Apis.Auth": "1.44.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Api.Gax.Rest.dll": {}
+        }
+      },
+      "Google.Apis/1.44.1": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Core": "1.44.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.44.1": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.44.1",
+          "Google.Apis.Core": "1.44.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.44.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
+      "Google.Apis.Translate.v2/1.42.0.875": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.42.0",
+          "Google.Apis.Auth": "1.42.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Translate.v2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Translate.v2.dll": {}
+        }
+      },
+      "Google.Cloud.Translation.V2/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Api.Gax.Rest": "3.0.0",
+          "Google.Apis.Translate.v2": "1.42.0.875"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Cloud.Translation.V2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Cloud.Translation.V2.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.33": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.13": {
         "type": "package",
         "compile": {
@@ -1054,7 +1154,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/12.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2893,6 +2993,21 @@
           "bin/placeholder/SpacecraftData.dll": {}
         }
       },
+      "SpacecraftSearcher/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Google.Cloud.Translation.V2": "2.0.0",
+          "HtmlAgilityPack": "1.11.33",
+          "SpacecraftData": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SpacecraftSearcher.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpacecraftSearcher.dll": {}
+        }
+      },
       "SpacecraftServices/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2909,6 +3024,208 @@
     }
   },
   "libraries": {
+    "Google.Api.Gax/3.0.0": {
+      "sha512": "jDXWaxeOjzUmaFBtEaGuWZmIl6CkR3yRrFuiMPFL9YNR6TWA4EZXl9K8mxae1fi7Z7H0j1CRfyAt2iZlomk9bw==",
+      "type": "package",
+      "path": "google.api.gax/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.api.gax.3.0.0.nupkg.sha512",
+        "google.api.gax.nuspec",
+        "lib/net461/Google.Api.Gax.dll",
+        "lib/net461/Google.Api.Gax.pdb",
+        "lib/net461/Google.Api.Gax.xml",
+        "lib/netstandard2.0/Google.Api.Gax.dll",
+        "lib/netstandard2.0/Google.Api.Gax.pdb",
+        "lib/netstandard2.0/Google.Api.Gax.xml"
+      ]
+    },
+    "Google.Api.Gax.Rest/3.0.0": {
+      "sha512": "BwqDdrOCkA4vi3JlB98B5Ta9rkNa1cY23bxJSJaEcXeshl9AIYJ7TAe/ur3rw+DoHqnPHG5qMzT4AVns9NujvQ==",
+      "type": "package",
+      "path": "google.api.gax.rest/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.api.gax.rest.3.0.0.nupkg.sha512",
+        "google.api.gax.rest.nuspec",
+        "lib/net461/Google.Api.Gax.Rest.dll",
+        "lib/net461/Google.Api.Gax.Rest.pdb",
+        "lib/net461/Google.Api.Gax.Rest.xml",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.dll",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.pdb",
+        "lib/netstandard2.0/Google.Api.Gax.Rest.xml"
+      ]
+    },
+    "Google.Apis/1.44.1": {
+      "sha512": "5l8vy1bwhuKDuE4Uku8qz2YnLaDhK1YJBGqzohx3MiaXyTucZWutovpEGYkvo6014rKUHa4hWDDuPxBJs/yxpA==",
+      "type": "package",
+      "path": "google.apis/1.44.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.1.44.1.nupkg.sha512",
+        "google.apis.nuspec",
+        "lib/net45/Google.Apis.PlatformServices.dll",
+        "lib/net45/Google.Apis.dll",
+        "lib/net45/Google.Apis.pdb",
+        "lib/net45/Google.Apis.xml",
+        "lib/netstandard1.3/Google.Apis.dll",
+        "lib/netstandard1.3/Google.Apis.pdb",
+        "lib/netstandard1.3/Google.Apis.xml",
+        "lib/netstandard2.0/Google.Apis.dll",
+        "lib/netstandard2.0/Google.Apis.pdb",
+        "lib/netstandard2.0/Google.Apis.xml"
+      ]
+    },
+    "Google.Apis.Auth/1.44.1": {
+      "sha512": "5gIhSOw362+daGBT2YgElpQUWgLERsKOS7k8d2FzIxi6wXTpeu7ov5kT4fWrnoX4fUJ+ibxqTfhmEY8UThCxyA==",
+      "type": "package",
+      "path": "google.apis.auth/1.44.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.auth.1.44.1.nupkg.sha512",
+        "google.apis.auth.nuspec",
+        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "lib/net45/Google.Apis.Auth.dll",
+        "lib/net45/Google.Apis.Auth.pdb",
+        "lib/net45/Google.Apis.Auth.xml",
+        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.pdb",
+        "lib/netstandard1.3/Google.Apis.Auth.xml",
+        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.pdb",
+        "lib/netstandard2.0/Google.Apis.Auth.xml"
+      ]
+    },
+    "Google.Apis.Core/1.44.1": {
+      "sha512": "VjN2tpE5++8xRjBcHgXuW7HoxgvPYoAsONj6ekq1Uv20TaC3aDsw+1tVCt1M60pO4mK0vnoZAxupb49B308+0Q==",
+      "type": "package",
+      "path": "google.apis.core/1.44.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.core.1.44.1.nupkg.sha512",
+        "google.apis.core.nuspec",
+        "lib/net45/Google.Apis.Core.dll",
+        "lib/net45/Google.Apis.Core.pdb",
+        "lib/net45/Google.Apis.Core.xml",
+        "lib/netstandard1.3/Google.Apis.Core.dll",
+        "lib/netstandard1.3/Google.Apis.Core.pdb",
+        "lib/netstandard1.3/Google.Apis.Core.xml",
+        "lib/netstandard2.0/Google.Apis.Core.dll",
+        "lib/netstandard2.0/Google.Apis.Core.pdb",
+        "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "Google.Apis.Translate.v2/1.42.0.875": {
+      "sha512": "tyGzu4pbtapDXppZnmw8rD8xzXPcgrt+dcrRn7j6ZkNalBFz8WZTFvI/lWCVmlKh1RuhCe0hZXOlsUQAp/QBxA==",
+      "type": "package",
+      "path": "google.apis.translate.v2/1.42.0.875",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.translate.v2.1.42.0.875.nupkg.sha512",
+        "google.apis.translate.v2.nuspec",
+        "lib/net40/Google.Apis.Translate.v2.dll",
+        "lib/net40/Google.Apis.Translate.v2.pdb",
+        "lib/net40/Google.Apis.Translate.v2.xml",
+        "lib/net45/Google.Apis.Translate.v2.dll",
+        "lib/net45/Google.Apis.Translate.v2.pdb",
+        "lib/net45/Google.Apis.Translate.v2.xml",
+        "lib/netstandard1.0/Google.Apis.Translate.v2.dll",
+        "lib/netstandard1.0/Google.Apis.Translate.v2.pdb",
+        "lib/netstandard1.0/Google.Apis.Translate.v2.xml",
+        "lib/netstandard1.3/Google.Apis.Translate.v2.dll",
+        "lib/netstandard1.3/Google.Apis.Translate.v2.pdb",
+        "lib/netstandard1.3/Google.Apis.Translate.v2.xml",
+        "lib/netstandard2.0/Google.Apis.Translate.v2.dll",
+        "lib/netstandard2.0/Google.Apis.Translate.v2.pdb",
+        "lib/netstandard2.0/Google.Apis.Translate.v2.xml"
+      ]
+    },
+    "Google.Cloud.Translation.V2/2.0.0": {
+      "sha512": "85HkHroDSCtIffxxaPoVWJZnIqH1OYuu/fu/JVUBmqWWe0kxuNCSYLOiII028NK0/w4rqYIVt1HPK2M9HpiH2Q==",
+      "type": "package",
+      "path": "google.cloud.translation.v2/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.cloud.translation.v2.2.0.0.nupkg.sha512",
+        "google.cloud.translation.v2.nuspec",
+        "lib/net461/Google.Cloud.Translation.V2.dll",
+        "lib/net461/Google.Cloud.Translation.V2.pdb",
+        "lib/net461/Google.Cloud.Translation.V2.xml",
+        "lib/netstandard2.0/Google.Cloud.Translation.V2.dll",
+        "lib/netstandard2.0/Google.Cloud.Translation.V2.pdb",
+        "lib/netstandard2.0/Google.Cloud.Translation.V2.xml"
+      ]
+    },
+    "HtmlAgilityPack/1.11.33": {
+      "sha512": "ccsOdeRuObzQNy3FGLHd0MTmPvEu9nKUYDAqLham1XD3azbU+gcyRF6Hu87A68b7WqGpCdBZiLU7CwJVVmTb6A==",
+      "type": "package",
+      "path": "htmlagilitypack/1.11.33",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.11.33.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.13": {
       "sha512": "IeY0huSfF3FScBc6L8b6vNbvej0ZReo2VCoxkAl/YsUn7mmBgHwWIdlq/Ic2OOfHcIx65b/4jBeQTkBhNTYuzw==",
       "type": "package",
@@ -4606,10 +4923,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4632,8 +4949,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.Frameworks/4.7.0": {
@@ -9207,6 +9525,11 @@
       "path": "../SpacecraftData/SpacecraftData.csproj",
       "msbuildProject": "../SpacecraftData/SpacecraftData.csproj"
     },
+    "SpacecraftSearcher/1.0.0": {
+      "type": "project",
+      "path": "../SpacecraftSearcher/SpacecraftSearcher.csproj",
+      "msbuildProject": "../SpacecraftSearcher/SpacecraftSearcher.csproj"
+    },
     "SpacecraftServices/1.0.0": {
       "type": "project",
       "path": "../SpacecraftServices/SpacecraftServices.csproj",
@@ -9223,6 +9546,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.13",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
       "SpacecraftData >= 1.0.0",
+      "SpacecraftSearcher >= 1.0.0",
       "SpacecraftServices >= 1.0.0"
     ]
   },
@@ -9255,6 +9579,9 @@
           "projectReferences": {
             "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftData\\SpacecraftData.csproj": {
               "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftData\\SpacecraftData.csproj"
+            },
+            "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\SpacecraftSearcher.csproj": {
+              "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\SpacecraftSearcher.csproj"
             },
             "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftServices\\SpacecraftServices.csproj": {
               "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftServices\\SpacecraftServices.csproj"

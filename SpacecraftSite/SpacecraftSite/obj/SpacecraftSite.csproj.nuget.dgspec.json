@@ -64,6 +64,74 @@
         }
       }
     },
+    "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\SpacecraftSearcher.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\SpacecraftSearcher.csproj",
+        "projectName": "SpacecraftSearcher",
+        "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\SpacecraftSearcher.csproj",
+        "packagesPath": "C:\\Users\\8460\\.nuget\\packages\\",
+        "outputPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\8460\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftData\\SpacecraftData.csproj": {
+                "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftData\\SpacecraftData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Google.Cloud.Translation.V2": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.33, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftServices\\SpacecraftServices.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -148,6 +216,9 @@
             "projectReferences": {
               "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftData\\SpacecraftData.csproj": {
                 "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftData\\SpacecraftData.csproj"
+              },
+              "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\SpacecraftSearcher.csproj": {
+                "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftSearcher\\SpacecraftSearcher.csproj"
               },
               "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftServices\\SpacecraftServices.csproj": {
                 "projectPath": "D:\\Диплом (ахахаха)\\SpacecraftSite\\SpacecraftServices\\SpacecraftServices.csproj"

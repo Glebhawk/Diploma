@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ using SpacecraftData.Repositories.Interfaces;
 
 namespace SpacecraftData.Repositories.Concrete
 {
-    class RocketRepository : IRocketRepository
+    public class RocketRepository : IRocketRepository
     {
         public ApplicationDbContext context { get; set; }
 
@@ -35,17 +36,29 @@ namespace SpacecraftData.Repositories.Concrete
 
         public async Task<Rocket> Get(int id)
         {
-            return await context.Rockets.FirstOrDefaultAsync(r => r.Id == id);
+            var rocket = await context.Rockets.Include(r => r.Country).Include(r => r.Launches).ThenInclude(l => l.Payload)
+                .Include(r => r.Stages).FirstOrDefaultAsync(r => r.Id == id);
+            rocket.Stages.OrderBy(s => s.Number);
+            return rocket;
         }
 
         public async Task<IEnumerable<Rocket>> GetAll()
         {
-            return await context.Rockets.ToListAsync();
+            var rockets = await context.Rockets.Include(r => r.Country).Include(r => r.Launches).ThenInclude(l => l.Payload)
+                .Include(r => r.Stages).ToListAsync();
+            foreach (var rocket in rockets)
+            {
+                rocket.Stages.OrderBy(s => s.Number);
+            }
+            return rockets;
         }
 
-        public Task<bool> Update(Rocket item)
+        public async Task<bool> Update(Rocket item)
         {
-            throw new NotImplementedException();
+            context.Rockets.Update(item);
+            int result = await context.SaveChangesAsync();
+            if (result != 0) return true;
+            else return false;
         }
     }
 }

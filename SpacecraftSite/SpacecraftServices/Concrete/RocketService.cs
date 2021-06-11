@@ -11,10 +11,12 @@ namespace SpacecraftServices.Concrete
 {
     public class RocketService : IRocketService
     {
+        public IRocketRepository rocketRepository { get; set; }
         public ILaunchRepository launchRepository { get; set; }
 
-        public RocketService(ILaunchRepository LaunchRepository)
+        public RocketService(IRocketRepository RocketRepository, ILaunchRepository LaunchRepository)
         {
+            rocketRepository = RocketRepository;
             launchRepository = LaunchRepository;
         }
         public async Task<IEnumerable<IEnumerable<RocketStatistics>>> GetRocketStatisticsForAllCountries()
@@ -32,6 +34,23 @@ namespace SpacecraftServices.Concrete
                 }
             }
             return rocketStatistics;
+        }
+
+        public async Task<Rocket> GetRocket(int id)
+        {
+            return await rocketRepository.Get(id);
+        }
+
+        public async Task<RocketStatistics> GetRocketStatistics(int rocketId)
+        {
+            var launches = await launchRepository.Find(l => l.Rocket.Id == rocketId);
+
+            return new RocketStatistics(launches);
+        }
+
+        public async Task<bool> UpdateRocket(Rocket rocket)
+        {
+            return await rocketRepository.Update(rocket);
         }
     }
 }

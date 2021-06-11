@@ -155,12 +155,10 @@ namespace SpacecraftData.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("TEXT");
@@ -197,12 +195,10 @@ namespace SpacecraftData.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Value")
                         .HasColumnType("TEXT");
@@ -303,6 +299,9 @@ namespace SpacecraftData.Migrations
                     b.Property<string>("Mission")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("NSSDC")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
@@ -335,6 +334,9 @@ namespace SpacecraftData.Migrations
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int?>("RocketId")
                         .HasColumnType("INTEGER");
@@ -400,7 +402,7 @@ namespace SpacecraftData.Migrations
             modelBuilder.Entity("SpacecraftData.Entities.Launch", b =>
                 {
                     b.HasOne("SpacecraftData.Entities.Rocket", "Rocket")
-                        .WithMany()
+                        .WithMany("Launches")
                         .HasForeignKey("RocketId");
                 });
 
